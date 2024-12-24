@@ -13,3 +13,9 @@ addTaskBtn.addEventListener('click', function () {
     alert('Please enter a task');
   }
 });
+
+taskList.addEventListener('click', (e) => {
+  if (e.target.tagName === 'LI') {
+    e.target.style.textDecoration = 'line-through';
+  }
+});
